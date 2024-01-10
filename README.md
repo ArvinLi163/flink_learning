@@ -1,1 +1,2 @@
-flink_learning作为日常学习的记录
+# 介绍
+flink_learning是一个记录flink日常学习记录的仓库
