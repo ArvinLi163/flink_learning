@@ -1,5 +1,6 @@
 package cn.lgy.chapter02
 
+import org.apache.flink.api.common.RuntimeExecutionMode
 import org.apache.flink.api.java.utils.ParameterTool
 import org.apache.flink.api.scala.createTypeInformation
 import org.apache.flink.streaming.api.scala.{DataStream, KeyedStream, StreamExecutionEnvironment}
@@ -13,6 +14,8 @@ object StreamWordCount {
   def main(args: Array[String]): Unit = {
     //1.创建一个流式执行环境
     val env: StreamExecutionEnvironment = StreamExecutionEnvironment.getExecutionEnvironment
+    //批处理
+//    env.setRuntimeMode(RuntimeExecutionMode.BATCH)
     //2.读取文件
     //    val lineDataStream: DataStream[String] = env.socketTextStream("127.0.0.1", 7777)
     val parameterTool: ParameterTool = ParameterTool.fromArgs(args)
