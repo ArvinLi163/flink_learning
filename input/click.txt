@@ -1,0 +1,4 @@
+Mary,./home,1000
+Tom,./cart,2000
+Lily,./prod?id=1,3000
+Mike,./order?id=3,4000
